@@ -1,218 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ankon | Software Engineer</title>
-
-  <!-- Simple, clean styling. No frameworks. -->
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #020617, var(--bg));
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    /* Header */
-    header {
-      display: grid;
-      gap: 16px;
-      margin-bottom: 60px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    header p {
-      color: var(--muted);
-      max-width: 600px;
-    }
-
-    .tags span {
-      display: inline-block;
-      margin-right: 10px;
-      margin-top: 10px;
-      padding: 6px 12px;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      border-radius: 999px;
-      font-size: 0.85rem;
-    }
-
-    /* Sections */
-    section {
-      margin-bottom: 70px;
-    }
-
-    section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-    }
-
-    /* Cards */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid #1f2933;
-      border-radius: 14px;
-      padding: 20px;
-      transition: transform 0.2s ease, border 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: var(--accent);
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
-
-    .card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 30px 0 10px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    /* Responsive tweak */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+    <title>Simple HTML Page</title>
 </head>
 <body>
 
-  <div class="container">
+    <h1>Hello World</h1>
 
-    <!-- HERO -->
-    <header>
-      <h1>Ankon</h1>
-      <p>
-        Software engineer focused on backend systems, Go, web security, and building real products.
-        I care about clean logic, useful software, and learning by shipping.
-      </p>
-      <div class="tags">
-        <span>Go</span>
-        <span>Backend</span>
-        <span>Web Security</span>
-        <span>APIs</span>
-        <span>Automation</span>
-      </div>
-    </header>
+    <p>This is a simple HTML page.</p>
 
-    <!-- ABOUT -->
-    <section>
-      <h2>About</h2>
-      <p style="max-width: 750px; color: var(--muted);">
-        I build backend-heavy applications using Go and modern web tooling.
-        I’m deeply interested in how systems break, how they scale, and how to make them simpler.
-        Most of my learning comes from building real projects, not tutorials.
-      </p>
-    </section>
+    <h2>About</h2>
+    <p>HTML is used to structure web pages.</p>
 
-    <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Smart Home Energy Manager</h3>
-          <p>
-            Desktop software that predicts and optimizes home energy usage.
-            Built to learn Go while creating something people can actually use.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Pharmacy Management System</h3>
-          <p>
-            Inventory, billing, and reporting software designed for small pharmacies.
-            Focused on simplicity and speed.
-          </p>
-        </div>
-        <div class="card">
-          <h3>WordPress → Hugo Sync Engine</h3>
-          <p>
-            A Go-based system that mirrors WordPress content into Hugo using automation and webhooks.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Security Research Labs</h3>
-          <p>
-            Hands-on labs covering recon, vulnerabilities, exploitation, and reporting.
-            Built for bug bounty and penetration testing practice.
-          </p>
-        </div>
-      </div>
-    </section>
+    <h2>Links</h2>
+    <a href="https://example.com">Visit Example</a>
 
-    <!-- SKILLS -->
-    <section>
-      <h2>Skills</h2>
-      <div class="grid">
-        <div class="card"><h3>Languages</h3><p>Go, Python, Bash, JavaScript</p></div>
-        <div class="card"><h3>Backend</h3><p>REST APIs, Gin, net/http, GORM, SQL</p></div>
-        <div class="card"><h3>Security</h3><p>Web Security, Bug Hunting, Recon, Reporting</p></div>
-        <div class="card"><h3>Tools</h3><p>Linux, Git, Docker (basic), Automation</p></div>
-      </div>
-    </section>
+    <h2>List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>Head</li>
+        <li>Body</li>
+    </ul>
 
-    <!-- CONTACT -->
-    <section>
-      <h2>Contact</h2>
-      <p style="color: var(--muted);">
-        Email: <a href="mailto:your@email.com">your@email.com</a><br />
-        GitHub: <a href="#">github.com/yourusername</a><br />
-        LinkedIn: <a href="#">linkedin.com/in/yourprofile</a>
-      </p>
-    </section>
-
-    <footer>
-      © 2026 Ankon — Built with a single index.html
-    </footer>
-
-  </div>
+    <p>Made by ankon</p>
 
 </body>
 </html>
